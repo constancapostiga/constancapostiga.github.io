@@ -7,4 +7,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './header.scss',
   templateUrl: './header.html',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  isMenuOpen = false;
+  closeMenu() { this.isMenuOpen = false; }
+}
