@@ -1,0 +1,94 @@
+<!-- src/app/components/music-player/music-player.html -->
+<div class="fixed right-6 sm:right-8 bottom-16 sm:bottom-20 z-50 font-['Cal_Sans']">
+
+  <!-- Hidden Audio Element -->
+  <audio #audioPlayer [src]="currentSong.src" (ended)="nextTrack()"></audio>
+
+  <!-- POPUP PLAYER CARD -->
+  @if (isOpen) {
+    <div class="absolute right-0 bottom-16 flex items-center gap-3.5 bg-white/90 backdrop-blur-md border border-black/90 p-2.5 pl-4 rounded-full shadow-2xl w-max transition-all duration-300 animate-in fade-in slide-in-from-bottom-3">
+      
+      <!-- Track Details & Live Animated Wave Icon -->
+      <div class="flex items-center gap-2.5">
+        
+        <!-- Animated Equalizer Bar Icon -->
+        <div class="flex items-end gap-0.5 h-3.5 w-3.5 shrink-0" [class.opacity-40]="!isPlaying">
+          <span class="w-1 bg-black rounded-full" [class.animate-pulse]="isPlaying" style="height: 60%"></span>
+          <span class="w-1 bg-black rounded-full" [class.animate-pulse]="isPlaying" style="height: 100%; animation-delay: 150ms"></span>
+          <span class="w-1 bg-black rounded-full" [class.animate-pulse]="isPlaying" style="height: 40%; animation-delay: 300ms"></span>
+        </div>
+
+        <div class="flex flex-col max-w-[130px] sm:max-w-[170px]">
+          <span class="text-xs font-medium text-black truncate leading-tight tracking-wide">{{ currentSong.title }}</span>
+          <span class="text-[10px] text-black/60 truncate leading-tight font-normal">{{ currentSong.artist }}</span>
+        </div>
+      </div>
+
+      <!-- Controls Divider -->
+      <div class="h-6 w-[1px] bg-black/10"></div>
+
+      <!-- Player Controls -->
+      <div class="flex items-center gap-1">
+        <!-- Previous -->
+        <button 
+          (click)="prevTrack()" 
+          class="p-1.5 text-black hover:scale-110 active:scale-95 transition-all rounded-full hover:bg-black/5" 
+          aria-label="Previous Track"
+        >
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+        </button>
+
+        <!-- Play/Pause -->
+        <button 
+          (click)="togglePlay()" 
+          class="p-2 bg-black text-white rounded-full hover:scale-105 active:scale-95 transition-all shadow-md" 
+          aria-label="Toggle Play/Pause"
+        >
+          @if (isPlaying) {
+            <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          } @else {
+            <svg class="w-3.5 h-3.5 fill-white ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          }
+        </button>
+
+        <!-- Next -->
+        <button 
+          (click)="nextTrack()" 
+          class="p-1.5 text-black hover:scale-110 active:scale-95 transition-all rounded-full hover:bg-black/5" 
+          aria-label="Next Track"
+        >
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+        </button>
+      </div>
+
+    </div>
+  }
+
+  <!-- FLOATING TRIGGER BUTTON -->
+  <button 
+    (click)="togglePopup()" 
+    class="relative flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-md border border-black rounded-full shadow-xl hover:bg-black hover:text-white active:scale-95 transition-all duration-200 cursor-pointer group"
+    aria-label="Toggle Music Player"
+  >
+    @if (isOpen) {
+      <!-- Close Icon -->
+      <svg class="w-4 h-4 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    } @else {
+      <!-- Music Note Icon -->
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+      </svg>
+    }
+
+    <!-- Playing Status Dot Indicator -->
+    @if (isPlaying && !isOpen) {
+      <span class="absolute -top-0.5 -right-0.5 flex h-3.5 w-3.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white"></span>
+      </span>
+    }
+  </button>
+
+</div>
