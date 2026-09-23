@@ -1,1 +1,16 @@
+/* src/styles.scss */
 @import "tailwindcss";
+
+/* 1. Load the OpenType font file */
+@font-face {
+  font-family: 'Adventures Unlimited';
+  src: url('/fonts/AdventuresUnlimited-ScriptRg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Map to a Tailwind CSS theme variable */
+@theme {
+  --font-adventures: 'Adventures Unlimited', cursive;
+}
