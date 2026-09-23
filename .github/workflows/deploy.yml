@@ -32,6 +32,9 @@ jobs:
       - name: Build Angular App
         run: npx ng build --base-href="/"
 
+      - name: Copy index.html to 404.html for GitHub Pages routing
+        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
