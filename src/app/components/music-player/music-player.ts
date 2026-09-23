@@ -1,5 +1,5 @@
 // src/app/components/music-player/music-player.ts
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild, inject } from '@angular/core';
 
 export type Song = {
   title: string;
@@ -14,6 +14,8 @@ export type Song = {
   styleUrl: './music-player.scss',
 })
 export class MusicPlayerComponent {
+  private elementRef = inject(ElementRef);
+
   @ViewChild('audioPlayer') audioRef!: ElementRef<HTMLAudioElement>;
 
   isOpen = false;
@@ -28,7 +30,19 @@ export class MusicPlayerComponent {
     return this.playlist[this.currentIndex];
   }
 
-  togglePopup(): void {
+  // Closes the popup whenever a click occurs outside this component
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const clickedInside = this.elementRef.nativeElement.contains(event.target as Node);
+    if (!clickedInside && this.isOpen) {
+      this.isOpen = false;
+    }
+  }
+
+  togglePopup(event?: MouseEvent): void {
+    if (event) {
+      event.stopPropagation(); // Prevents instant re-triggering on host click
+    }
     this.isOpen = !this.isOpen;
   }
 
