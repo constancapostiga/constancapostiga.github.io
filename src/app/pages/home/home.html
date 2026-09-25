@@ -1,52 +1,110 @@
 <!-- src/app/pages/home/home.html -->
 <app-header />
 
-<main class="min-h-screen py-8 px-4 sm:px-6 flex justify-center">
-  <!-- Switches from 1 column on mobile to 2 columns on desktop -->
-  <div class="w-full max-w-[1060px] grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 justify-items-center">
-    
-    <!-- Arpeggio Card -->
-    <a routerLink="/arpeggio" class="group relative w-full h-72 sm:h-96 block overflow-hidden rounded-xl cursor-pointer shadow-md">
-      <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/images/arpeggio.png" alt="Arpeggio" />
-      <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-        <span class="text-black text-2xl sm:text-3xl font-normal font-['Cal_Sans'] text-center">
-          Arpeggio Music Store
+<main>
+
+  <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="relative px-5 pt-12 pb-8 sm:px-8 md:px-14 md:pt-16 md:pb-12">
+
+    <!-- Star — upper left, rotates clockwise on scroll -->
+    <span aria-hidden="true"
+          class="star pointer-events-none absolute top-4 left-4 select-none"
+          [style.transform]="starTopRotation">
+      <svg width="72" height="72" viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z" fill="#F8EB7A"/>
+      </svg>
+    </span>
+
+    <!-- Star — lower right, rotates counter-clockwise on scroll -->
+    <span aria-hidden="true"
+          class="star pointer-events-none absolute bottom-4 right-4 select-none"
+          [style.transform]="starBottomRotation">
+      <svg width="72" height="72" viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z" fill="#F8EB7A"/>
+      </svg>
+    </span>
+
+    <div class="mx-auto max-w-3xl text-center space-y-8">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal font-['Adventures_Unlimited']
+                 leading-tight tracking-widest text-black">
+        Hi, I'm Constança Postiga!
+        I'm a graphic designer and this is my portfolio
+      </h1>
+
+      <a routerLink="/about"
+         class="inline-flex items-center justify-center rounded-full bg-amber-200
+                px-8 py-3 text-base font-light font-['Outfit'] text-black
+                hover:bg-amber-300 transition-colors">
+        More About Me
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── Tag Strip ────────────────────────────────────────────────────── -->
+  <div class="w-full overflow-x-auto scrollbar-hidden py-4 px-5 sm:px-8 md:px-14">
+    <div class="flex flex-nowrap items-center gap-2.5 w-max mx-auto">
+      @for (tag of tags; track tag) {
+        <span class="shrink-0 inline-flex items-center justify-center
+                     rounded-full border border-black
+                     px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black">
+          {{ tag }}
         </span>
-      </div>
-    </a>
-
-    <!-- Add other project cards with the same responsive classes -->
-
-    <!-- Turismo Card -->
-    <a routerLink="/turismo" class="group relative w-full h-72 sm:h-96 block overflow-hidden rounded-xl cursor-pointer shadow-md">
-      <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/images/cafe.png" alt="Turismo" />
-      <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-        <span class="text-black text-2xl sm:text-3xl font-normal font-['Cal_Sans'] text-center">
-          Bar Praia Turismo
-        </span>
-      </div>
-    </a>
-
-    <!-- Gel Card -->
-    <a routerLink="/gel" class="group relative w-full h-72 sm:h-96 block overflow-hidden rounded-xl cursor-pointer shadow-md">
-      <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/images/gel.png" alt="Gel" />
-      <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-        <span class="text-black text-2xl sm:text-3xl font-normal font-['Cal_Sans'] text-center">
-          Ice Cream Packaging
-        </span>
-      </div>
-    </a>
-
-    <!-- Purple Card -->
-    <a routerLink="/purple" class="group relative w-full h-72 sm:h-96 block overflow-hidden rounded-xl cursor-pointer shadow-md">
-      <img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" src="/images/purple.png" alt="Purple" />
-      <div class="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-        <span class="text-black text-2xl sm:text-3xl font-normal font-['Cal_Sans'] text-center">
-          Purple - Reimagined
-        </span>
-      </div>
-    </a>
-
+      }
+    </div>
   </div>
+
+  <!-- ─── Projects Heading ─────────────────────────────────────────────── -->
+  <div class="px-5 py-6 sm:px-8 md:px-14">
+    <h2 class="text-center text-4xl font-normal font-['Outfit'] uppercase tracking-wide text-black">
+      Projects
+    </h2>
+  </div>
+
+  <!-- ─── Projects Grid ────────────────────────────────────────────────── -->
+  <section class="px-5 pb-16 sm:px-8 md:px-14">
+    <div class="mx-auto max-w-screen-xl grid grid-cols-1 gap-10">
+
+      @for (project of projects; track project.redirect_to) {
+        <article class="flex flex-col sm:flex-row gap-6 md:gap-10">
+
+          <!-- Thumbnail -->
+          <a [routerLink]="project.redirect_to"
+             class="block shrink-0 w-full sm:w-1/2 overflow-hidden rounded-[10px] group">
+            <img [src]="project.image" [alt]="project.title"
+                 class="w-full aspect-[549/386] object-cover
+                        transition-transform duration-500 group-hover:scale-105" />
+          </a>
+
+          <!-- Text content -->
+          <div class="flex flex-col gap-4 justify-center">
+
+            <!-- Title + Year -->
+            <h3 class="font-['Outfit'] text-black">
+              <span class="text-2xl sm:text-3xl md:text-4xl font-normal uppercase">{{ project.title }}</span>
+              <span class="text-lg sm:text-xl font-normal ml-2 text-neutral-500">({{ project.year }})</span>
+            </h3>
+
+            <!-- Description -->
+            <p class="text-base sm:text-lg md:text-xl font-normal font-['Outfit'] text-black leading-relaxed">
+              {{ project.description }}
+            </p>
+
+            <!-- CTA -->
+            <a [routerLink]="project.redirect_to"
+               class="self-start inline-flex items-center justify-center rounded-full bg-amber-200
+                      px-8 py-3 text-base font-light font-['Outfit'] text-black
+                      hover:bg-amber-300 transition-colors">
+              Learn More
+            </a>
+
+          </div>
+
+        </article>
+      }
+
+    </div>
+  </section>
+
 </main>
-<app-footer></app-footer>
+
+<app-footer />

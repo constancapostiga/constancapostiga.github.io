@@ -1,0 +1,17 @@
+/* src/app/pages/home/home.scss */
+
+/* Hide scrollbar on tag strip while keeping it scrollable */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Promote stars to their own compositor layer for smooth rotation */
+.star {
+  display: inline-block;
+  will-change: transform;
+}
