@@ -6,42 +6,48 @@
   <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
   <section class="relative px-5 pt-12 sm:px-8 md:px-14 md:pt-16 overflow-hidden">
 
-    <!-- Star — upper left, rotates clockwise on scroll -->
-    <span aria-hidden="true" class="star pointer-events-none absolute select-none
-           top-0 left-0 size-14
-           sm:size-16
-           md:size-20" [style.transform]="starTopRotation">
-      <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-        <path
-          d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
-          fill="#F8EB7A" />
-      </svg>
-    </span>
+    <div class="relative mx-auto max-w-3xl text-center space-y-8">
 
-    <!-- Star — lower right, rotates counter-clockwise on scroll -->
-    <span aria-hidden="true" class="star pointer-events-none absolute select-none
-           bottom-0 right-0 size-14
-           sm:size-16
-           md:size-20" [style.transform]="starBottomRotation">
-      <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-        <path
-          d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
-          fill="#F8EB7A" />
-      </svg>
-    </span>
+      <!-- Star — upper left, rotates clockwise on scroll -->
+      <span aria-hidden="true" class="star pointer-events-none absolute select-none z-0
+     left-[0%] top-[-2%]
+     sm:left-[-6%] sm:top-[-4%]
+     md:left-[-11%] md:top-[-6%]
+     size-14 sm:size-16 md:size-20" [style.transform]="starTopRotation">
+        <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-full h-full rotate-[-13.14deg]">
+          <path
+            d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
+            fill="#F8EB7A" />
+        </svg>
+      </span>
 
-    <div class="mx-auto max-w-3xl text-center space-y-8 relative z-10">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-normal font-['Adventures_Unlimited']
+      <!-- Star — lower right, rotates counter-clockwise on scroll -->
+      <span aria-hidden="true" class="star pointer-events-none absolute select-none z-0
+     left-[85%] top-[52%]
+     sm:left-[92%]
+     md:left-[98%]
+     size-14 sm:size-16 md:size-20" [style.transform]="starBottomRotation">
+        <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="w-full h-full rotate-[8.42deg]">
+          <path
+            d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
+            fill="#F8EB7A" />
+        </svg>
+      </span>
+
+      <h1 class="relative z-10 text-4xl sm:text-5xl md:text-6xl font-normal font-['Adventures_Unlimited']
                leading-tight tracking-widest text-black">
         Hi, I'm Constança Postiga!
         I'm a graphic designer and this is my portfolio
       </h1>
 
-      <a routerLink="/about" class="inline-flex items-center justify-center rounded-full bg-amber-200
+      <a routerLink="/about" class="relative z-10 inline-flex items-center justify-center rounded-full bg-amber-200
               px-8 py-3 text-base font-light font-['Outfit'] text-black
               hover:bg-stone-200 transition-colors">
         More About Me
       </a>
+
     </div>
   </section>
 
