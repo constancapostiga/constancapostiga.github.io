@@ -1,90 +1,222 @@
 <app-header></app-header>
-<main class="font-sans">
-    <!-- src/app/pages/about/about.html -->
-    <section data-property-1="about" class="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-10 md:px-14 md:py-16">
+<main>
+    <!-- ─── About Hero ────────────────────────────────────────────────────── -->
+    <section class="relative px-5 py-16 sm:px-8 md:px-14 overflow-hidden">
 
-        <h1 class="text-[2rem] leading-tight font-normal text-black font-['Adventures_Unlimited'] sm:text-4xl md:text-6xl">
-            Hi! I'm Constança :)
+        <!-- Star cluster — left side -->
+        <span aria-hidden="true" class="pointer-events-none absolute select-none
+           left-[2%] top-[38%] size-12 sm:size-16 md:size-20 rotate-[15deg]">
+            <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <path
+                    d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
+                    fill="#F8EB7A" />
+            </svg>
+        </span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute select-none
+           left-[10%] top-[12%] size-7 sm:size-9 md:size-11 rotate-[-10deg]">
+            <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <path
+                    d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
+                    fill="#F8EB7A" />
+            </svg>
+        </span>
+
+        <!-- Star cluster — right side -->
+        <span aria-hidden="true" class="pointer-events-none absolute select-none
+           right-[6%] top-[42%] size-12 sm:size-16 md:size-20 rotate-[-20deg]">
+            <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <path
+                    d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
+                    fill="#F8EB7A" />
+            </svg>
+        </span>
+
+        <span aria-hidden="true" class="pointer-events-none absolute select-none
+           right-[2%] top-[58%] size-7 sm:size-9 md:size-11 rotate-[8deg]">
+            <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <path
+                    d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
+                    fill="#F8EB7A" />
+            </svg>
+        </span>
+
+        <!-- Title -->
+        <h1 class="relative z-10 mx-auto max-w-3xl -rotate-2 text-center text-4xl sm:text-5xl md:text-6xl
+             font-normal font-['Adventures_Unlimited'] leading-tight tracking-[6.4px] text-black">
+            Hi, I'm Constança Postiga!
         </h1>
 
-        <div class="mt-8 grid grid-cols-1 gap-8 sm:mt-10 sm:gap-10 md:mt-14 md:grid-cols-[1fr_320px] md:gap-16">
+    </section>
+    <!-- ─── About Content ──────────────────────────────────────────────────── -->
+    <section class="px-5 sm:px-8 md:px-14 py-12">
+        <div class="mx-auto max-w-screen-xl flex flex-col md:flex-row gap-10 md:gap-16">
 
-            <!-- Bio: first on mobile after photo, left column on desktop -->
-            <div class="order-2 space-y-5 md:order-1">
-                <p class="max-w-[65ch] text-base leading-relaxed text-black font-['Outfit',_sans-serif] sm:text-lg md:text-xl">
-                    My name is Constança Postiga, and I'm a 21-year-old Graphic Designer based in Porto, Portugal.
+            <!-- Left column: Image + Software + CV -->
+            <div class="shrink-0 w-full md:w-[380px] flex flex-col gap-10">
+
+                <!-- Image -->
+                <img class="w-full h-auto max-w-[380px] mx-auto md:mx-0 rounded-[10px]
+                  origin-top-left -rotate-[0.58deg] object-cover" src="/images/profile.png" alt="Constança Postiga" />
+
+                <!-- Software -->
+                <div class="flex flex-col gap-4">
+                    <p class="text-xl font-normal font-['Outfit'] text-black">
+                        Softwares I usually work with:
+                    </p>
+
+                    <div class="flex flex-wrap gap-4">
+
+                        <!-- Photoshop -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-full h-full">
+                                <title>photoshop</title>
+                                <path fill="#001e36"
+                                    d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6" />
+                                <path fill="#31a8ff"
+                                    d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z" />
+                            </svg>
+                        </div>
+
+                        <!-- Illustrator -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250" class="w-full h-full">
+                                <title>adobe-illustrator</title>
+                                <rect width="256" height="249.6" fill="#300" rx="42.5" />
+                                <path fill="#ff9a00"
+                                    d="M124.054 149.79h-39.67l-8.072 25.073a2.02 2.02 0 0 1-2.061 1.546H54.158q-1.718 0-1.202-1.89l34.347-98.918q.515-1.545 1.03-3.52c.45-2.292.68-4.62.687-6.955a1.063 1.063 0 0 1 1.202-1.203h27.306q1.2 0 1.374.86l38.983 109.908q.515 1.72-1.03 1.718h-22.326a1.59 1.59 0 0 1-1.717-1.202zm-33.488-21.638H117.7l-.387-1.277l-.621-2.022l-.443-1.42l-.707-2.236l-1.503-4.707l-1.322-4.173l-3.433-10.87a334 334 0 0 1-2.46-8.138l-.628-2.21l-.734-2.613l-1.12-4.05l-.21-.763h-.171a139 139 0 0 1-3.136 12.23l-2.548 8.196l-1.402 4.528l-1.415 4.584q-.383 1.242-.765 2.456l-.76 2.398l-.756 2.342l-.752 2.284l-.748 2.227q-.372 1.1-.743 2.17zm90.501-46.025a12.46 12.46 0 0 1-9.445-3.778a13.6 13.6 0 0 1-3.607-9.789a12.6 12.6 0 0 1 3.864-9.53a13.27 13.27 0 0 1 9.165-3.697l.366.004q6.183 0 9.704 3.692a13.26 13.26 0 0 1 3.52 9.531a13.4 13.4 0 0 1-3.692 9.79a13.18 13.18 0 0 1-9.508 3.79zm-11.85 92.564V92.603q-.001-1.546 1.374-1.546h21.124q1.373 0 1.374 1.546v82.088q0 1.72-1.374 1.718h-20.952q-1.464 0-1.541-1.542z" />
+                            </svg>
+                        </div>
+
+                        <!-- Premiere Pro -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-full h-full">
+                                <title>adobe-premiere-pro</title>
+                                <path fill="#00005b"
+                                    d="M90.7 6.4h330.7c50.1 0 90.7 40.5 90.7 90.7V415c0 50.1-40.5 90.7-90.7 90.7H90.7C40.5 505.6 0 465.1 0 414.9V97.1C0 46.9 40.5 6.4 90.7 6.4" />
+                                <path fill="#99f"
+                                    d="M121.6 356.3V136.5c0-1.5.6-2.3 2.1-2.3c3.6 0 7 0 11.9-.2c5.1-.2 10.5-.2 16.2-.4c5.8-.2 11.9-.2 18.6-.4c6.6-.2 13-.2 19.4-.2c17.5 0 32 2.1 43.9 6.6c10.7 3.6 20.5 9.6 28.6 17.5c6.8 6.8 12.2 15.1 15.6 24.3c3.2 9 4.9 18.1 4.9 27.7c0 18.3-4.3 33.5-12.8 45.4s-20.5 20.9-34.3 26c-14.5 5.3-30.5 7.3-48 7.3c-5.1 0-8.5 0-10.7-.2s-5.1-.2-9.2-.2v68.5c.2 1.5-.9 2.8-2.3 3h-41.4c-1.7 0-2.6-.9-2.6-2.8zm46.5-180.7v71.7c3 .2 5.8.4 8.3.4h11.3c8.3 0 16.6-1.3 24.5-3.8c6.8-1.9 12.8-6 17.5-11.3c4.5-5.3 6.6-12.6 6.6-22c.2-6.6-1.5-13.2-4.9-19c-3.6-5.5-8.7-9.8-14.9-12.2c-7.9-3.2-16.4-4.5-25.2-4.3c-5.5 0-10.5 0-14.5.2c-4.2-.2-7.2.1-8.7.3m145.5 12.6h37.3c2.1 0 3.8 1.5 4.5 3.4c.6 1.7 1.1 3.4 1.3 5.3c.4 2.1.9 4.5 1.1 6.6c.2 2.3.4 4.9.4 7.7c6.4-7.5 14.1-13.7 22.8-18.3c9.8-5.5 21.1-8.3 32.4-8.3c1.5-.2 2.8.9 3 2.3v42.5c0 1.7-1.1 2.3-3.4 2.3c-7.7-.2-15.6.4-23 2.1c-6.2 1.3-12.2 3.2-17.9 5.8c-4.1 1.9-7.9 4.5-10.9 7.9v108.8c0 2.1-.9 3-2.8 3h-42c-1.7.2-3.2-.9-3.4-2.6v-119c0-5.1 0-10.5-.2-16s-.2-11.1-.4-16.6c0-4.9-.4-9.6-.9-14.5c-.2-1.1.4-2.1 1.5-2.3c0-.4.4-.4.6-.1" />
+                            </svg>
+                        </div>
+
+                        <!-- InDesign -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 80" class="w-full h-full">
+                                <title>indesign</title>
+                                <g fill="none">
+                                    <g clip-path="url(#SVGRJNxRbwH)">
+                                        <path fill="#49021f"
+                                            d="M67.521 0H14.53C6.505 0 0 6.505 0 14.53v50.94C0 73.495 6.505 80 14.53 80h52.99c8.025 0 14.53-6.505 14.53-14.53V14.53C82.051 6.505 75.546 0 67.521 0" />
+                                        <path fill="#f36"
+                                            d="M29.798 20.929V55.99q0 .55-.496.55h-6.66q-.44 0-.44-.55V20.929q0-.44.495-.44h6.66a.39.39 0 0 1 .44.44m19.706 36.163a17.05 17.05 0 0 1-7.348-1.541a11.7 11.7 0 0 1-5.147-4.651q-1.871-3.11-1.871-7.789a14.4 14.4 0 0 1 1.871-7.21a13.74 13.74 0 0 1 5.45-5.285q3.577-1.98 8.641-1.981q.275 0 .716.027q.44.03 1.046.083V17.9q0-.384.33-.385h6.935a.29.29 0 0 1 .33.33v32.53q0 .938.083 2.037q.083 1.102.138 1.982a.57.57 0 0 1-.33.55c-1.79.746-3.653 1.3-5.56 1.651a30 30 0 0 1-5.284.496m3.358-6.825V35.24a5.5 5.5 0 0 0-.908-.165a11 11 0 0 0-1.129-.055a8.5 8.5 0 0 0-3.853.88a7.5 7.5 0 0 0-2.89 2.532q-1.128 1.651-1.128 4.349c-.027 1.2.17 2.394.578 3.522c.333.91.858 1.736 1.541 2.422a5.9 5.9 0 0 0 2.312 1.376a9 9 0 0 0 2.835.44q.77 0 1.43-.054c.41-.031.817-.105 1.212-.22" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="SVGRJNxRbwH">
+                                            <path fill="#fff" d="M0 0h82.051v80H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- After Effects -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-full h-full">
+                                <title>aftereffects</title>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="#00005b" rx="60" />
+                                    <path fill="#99f"
+                                        d="M105.157 156.12h-39.68l-8.107 25.173c-.213.96-1.066 1.6-2.026 1.494H35.29c-1.173 0-1.493-.64-1.173-1.92l34.347-98.454c.32-1.066.64-2.026 1.066-3.306c.427-2.24.64-4.587.64-6.934c-.106-.533.32-1.066.853-1.173H98.65c.747 0 1.28.32 1.387.853l38.933 108.8c.32 1.174 0 1.707-1.066 1.707H115.61c-.746.107-1.493-.427-1.706-1.173l-8.747-25.6zm-33.493-21.227h27.093c-.64-2.24-1.494-4.906-2.454-7.68c-.96-2.88-1.92-5.973-2.88-9.173c-1.066-3.307-2.026-6.507-3.093-9.813s-2.026-6.4-2.88-9.494c-.853-2.986-1.6-5.76-2.347-8.32h-.213c-.96 4.587-2.133 9.174-3.627 13.76c-1.6 5.12-3.2 10.454-4.906 15.787c-1.387 5.44-3.094 10.453-4.693 14.933m130.133 11.627h-33.813c.426 3.307 1.493 6.613 3.306 9.493c1.92 2.88 4.587 5.12 7.787 6.4c4.267 1.814 8.96 2.774 13.653 2.667c3.734-.107 7.467-.427 11.094-1.173a40 40 0 0 0 9.493-2.454c.533-.426.853-.213.853.854v16.32c0 .426-.106.853-.213 1.28c-.213.32-.427.533-.747.746a45.6 45.6 0 0 1-10.666 3.2a72 72 0 0 1-15.147 1.28c-8.107 0-14.933-1.28-20.48-3.733c-5.227-2.24-9.813-5.76-13.44-10.133a39.15 39.15 0 0 1-7.36-13.974c-1.493-5.013-2.24-10.24-2.24-15.573c0-5.76.853-11.413 2.667-16.96a43.5 43.5 0 0 1 8-14.613c3.52-4.267 7.893-7.68 12.906-10.134c5.014-2.453 10.987-3.306 17.814-3.306c5.653-.107 11.306.96 16.533 3.306c4.373 1.92 8.213 4.8 11.2 8.534c2.773 3.626 5.013 7.68 6.4 12.16c1.387 4.266 2.027 8.64 2.027 13.013c0 2.56-.107 4.8-.214 6.827c-.213 2.026-.32 3.52-.426 4.48c-.107.746-.747 1.386-1.494 1.386c-.64 0-1.813.107-3.52.214c-1.706.213-3.733.32-6.186.32c-2.454 0-5.014-.427-7.787-.427m-33.813-15.573h22.506c2.774 0 4.8 0 6.08-.107c.854-.107 1.707-.32 2.454-.853v-1.067a12.3 12.3 0 0 0-.64-3.947c-1.92-5.973-7.574-10.026-13.867-9.813a15.02 15.02 0 0 0-14.187 8.107c-1.28 2.453-2.026 5.013-2.346 7.68" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Figma -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-full h-full">
+                                <title>figma-dark</title>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="#242938" rx="60" />
+                                    <g clip-path="url(#SVGXwgIudex)">
+                                        <path fill="#0acf83"
+                                            d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228" />
+                                        <path fill="#a259ff"
+                                            d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333" />
+                                        <path fill="#f24e1e"
+                                            d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334" />
+                                        <path fill="#ff7262"
+                                            d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z" />
+                                        <path fill="#1abcfe"
+                                            d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="SVGXwgIudex">
+                                            <path fill="#fff" d="M61 28h133.36v200H61z" />
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    <p class="text-base font-normal font-['Outfit'] text-black">
+                        I'm open to learn new ones ;)
+                    </p>
+                </div>
+
+                <!-- CV -->
+                <div class="flex flex-col gap-4">
+                    <p class="text-xl font-normal font-['Outfit'] text-black">My CV :</p>
+
+                    <div class="flex flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center w-40 h-12 rounded-full bg-amber-200
+              text-base font-light font-['Outfit'] text-black hover:bg-stone-300 transition-colors">
+                            PT
+                        </a>
+
+                        <a href="#" class="inline-flex items-center justify-center w-40 h-12 rounded-full bg-amber-200
+              text-base font-light font-['Outfit'] text-black hover:bg-stone-300 transition-colors">
+                            EN
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right column: Bio -->
+            <div class="flex flex-col gap-10">
+                <p class="text-lg sm:text-xl font-normal font-['Outfit'] text-black leading-relaxed">
+                    I'm a 21-year-old Graphic Designer based in Porto, Portugal. I graduated UPCA with a degree in
+                    Graphic Design in June 2026.
                     I'm passionate about visual communication, branding and creative storytelling, and I enjoy
-                    transforming ideas and concepts into visual identities that are not only aesthetically engaging,
-                    but also meaningful, purposeful and memorable.
-                    For me, design is about more than creating something that looks good. It's about understanding
-                    the idea behind a project, the people it is intended for and the message it needs to communicate.
-                    I enjoy exploring how typography, colour, composition, imagery and visual systems can work
-                    together to create a clear and engaging experience.
+                    transforming ideas and concepts into visual identities that are not only aesthetically engaging, but
+                    also meaningful, purposeful and memorable.
+                    For me, design is about more than creating something that looks good. It's about understanding the
+                    idea behind a project, the people it is intended for and the message it needs to communicate. I
+                    enjoy exploring how typography, colour, composition, imagery and visual systems can work together to
+                    create a clear and engaging experience.
                     I'm naturally curious and always looking for new ways to explore design and expand my creative
-                    thinking. I enjoy experimenting with different styles, techniques and approaches, and I'm not
-                    afraid to step outside of my comfort zone when a project calls for something different. I'm
-                    particularly interested in branding, editorial design, UX/UI, packaging and social media, where I
-                    can combine creativity with strategy and attention to detail. I also have a strong interest in
-                    illustration, which I enjoy incorporating into projects whenever it feels like the right way to
-                    communicate an idea.
-                    Throughout my studies and projects, I've also learned how important collaboration and teamwork
-                    are within the creative process. I enjoy working with other people, sharing ideas and seeing how
+                    thinking. I enjoy experimenting with different styles, techniques and approaches, and I'm not afraid
+                    to step outside of my comfort zone when a project calls for something different. I'm particularly
+                    interested in branding, editorial design, UX/UI, packaging and social media, where I can combine
+                    creativity with strategy and attention to detail. I also have a strong interest in illustration,
+                    which I enjoy incorporating into projects whenever it feels like the right way to communicate an
+                    idea.
+                    Throughout my studies and projects, I've also learned how important collaboration and teamwork are
+                    within the creative process. I enjoy working with other people, sharing ideas and seeing how
                     different perspectives can transform and improve an initial concept. I'm comfortable both
                     contributing my own ideas and listening to feedback, and I see constructive criticism as an
-                    important part of developing better work. I believe that the best creative outcomes often come
-                    from being open to other perspectives and being willing to adapt an idea rather than becoming
-                    attached to the first solution.
-                    I'm always looking for new challenges, opportunities to learn and people to collaborate with. I
-                    want to continue developing as a designer, discovering new areas of the creative industry and
-                    working on projects that allow me to turn ideas into something people can see, feel and remember.
-                    Ultimately, I'm still discovering what kind of designer I want to become — and that's one of the
+                    important part of developing better work. I believe that the best creative outcomes often come from
+                    being open to other perspectives and being willing to adapt an idea rather than becoming attached to
+                    the first solution.
+                    I'm always looking for new challenges, opportunities to learn and people to collaborate with. I want
+                    to continue evolving as a designer, discovering new areas of the creative industry and working on
+                    projects that allow me to turn ideas into something people can see, feel and remember.
+                    Ultimately, I'm still discovering what kind of designer I want to become and that's one of the
                     things I enjoy most about design. There is always something new to learn, experiment with and
                     create.
                 </p>
-            </div>
-
-            <!-- Photo, tags, softwares: first on mobile, right column on desktop -->
-            <div class="order-1 flex flex-col items-start gap-6 sm:gap-8 md:order-2">
-
-                <img src="/images/profile.png" alt="Portrait of Constança Postiga"
-                    class="aspect-[411/509] w-41 max-w-full object-cover xs:w-48 sm:w-64 md:w-full">
-
-                <!-- Skill tags -->
-                <ul class="grid w-full grid-cols-2 gap-2.5 sm:grid-cols-2 sm:gap-3 md:grid-cols-3 auto-rows-fr font-['Outfit',_sans-serif]">
-                    @for (tag of tags; track tag) {
-                    <li
-                        class="flex items-center justify-center px-3 py-3 text-center text-xs text-black border border-black rounded-full whitespace-nowrap sm:px-6 sm:py-3.5 sm:text-sm md:text-base">
-                        <span>{{ tag }}</span>
-                    </li>
-                    }
-                </ul>
-
-                <!-- Softwares I use -->
-                <div class="w-full">
-                    <h2 class="text-base text-black font-['Outfit',_sans-serif] sm:text-lg md:text-xl">Softwares I use</h2>
-
-                    <!-- Grid layout: 6 columns on desktop, 3 columns on mobile -->
-                    <ul class="mt-3 grid grid-cols-4 gap-x-2 gap-y-3 sm:mt-4 sm:grid-cols-5 sm:gap-x-3 sm:gap-y-4 md:grid-cols-5">
-                        @for (app of softwares; track app.name) {
-                        <li class="flex flex-col items-center gap-1.5">
-
-                            <!-- Icon Container -->
-                            <div [innerHTML]="app.icon"
-                                class="aspect-[50/53] w-full max-w-[50px] flex items-center justify-center shrink-0 [&>svg]:h-full [&>svg]:w-full [&>svg]:object-contain"
-                                [attr.aria-label]="app.name"></div>
-
-                            <!-- Custom Styled Proficiency Bar -->
-                            <div
-                                class="relative h-[11px] w-full max-w-[50px] bg-white border border-[#D2BD00]/50 rounded-full overflow-hidden p-[1px]">
-                                <div class="h-full bg-[#F8EB7A] rounded-full transition-all duration-500 ease-out"
-                                    [style.width.%]="app.level" role="progressbar" [attr.aria-valuenow]="app.level"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-
-                        </li>
-                        }
-                    </ul>
-                </div>
             </div>
         </div>
     </section>

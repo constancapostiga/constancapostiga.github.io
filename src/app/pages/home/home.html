@@ -39,7 +39,7 @@
 
       <a routerLink="/about" class="inline-flex items-center justify-center rounded-full bg-amber-200
               px-8 py-3 text-base font-light font-['Outfit'] text-black
-              hover:bg-amber-300 transition-colors">
+              hover:bg-stone-200 transition-colors">
         More About Me
       </a>
     </div>
@@ -67,7 +67,7 @@
   </div>
 
   <!-- ─── Projects Heading ─────────────────────────────────────────────── -->
-  <div class="px-5 sm:px-8 md:px-14 mt-[112px]">
+  <div id="projects" class="px-5 sm:px-8 md:px-14 mt-[112px]">
     <h2
       class="mx-auto max-w-screen-xl text-left text-4xl font-normal font-['Outfit'] uppercase tracking-wide text-black">
       Projects
@@ -76,7 +76,7 @@
 
   <!-- ─── Projects Grid ────────────────────────────────────────────────── -->
   <section class="px-5 pb-16 sm:px-8 md:px-14 mt-14">
-    <div class="mx-auto max-w-screen-xl grid grid-cols-1 gap-20">
+    <div class="mx-auto max-w-screen-xl grid grid-cols-1 gap-20 ">
 
       @for (project of projects; track project.redirect_to) {
       <article class="flex flex-col sm:flex-row gap-6 md:gap-10">
@@ -105,7 +105,7 @@
           <!-- CTA -->
           <a [routerLink]="project.redirect_to" class="self-start inline-flex items-center justify-center rounded-full bg-amber-200
                     px-8 py-3 text-base font-light font-['Outfit'] text-black
-                    hover:bg-amber-300 transition-colors">
+                    hover:bg-stone-200 transition-colors">
             Learn More
           </a>
 

@@ -6,7 +6,7 @@
         <!-- Brand + hamburger -->
         <div class="flex items-center justify-between">
             <a routerLink="/" (click)="closeMenu()"
-                class="rounded text-xl font-normal text-black font-['Adventures_Unlimited'] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black min-[400px]:text-2xl sm:text-4xl">
+                class="rounded text-xl font-normal text-black font-['Adventures_Unlimited'] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black min-[400px]:text-2xl sm:text-4xl tracking-[4px]">
                 Constança Postiga
             </a>
 
@@ -29,8 +29,7 @@
         <!-- Nav: stacked list on mobile, inline row on desktop -->
         <nav id="primary-nav" aria-label="Primary" [class.hidden]="!isMenuOpen"
             class="mt-2 flex flex-col border-t border-black/15 md:mt-0 md:flex md:flex-row md:items-center md:gap-8 md:border-0">
-            <a routerLink="/" routerLinkActive="underline" [routerLinkActiveOptions]="{ exact: true }"
-                (click)="closeMenu()"
+            <a [routerLink]="['/']" fragment="projects" (click)="closeMenu()"
                 class="py-3 text-lg font-normal text-black font-['Outfit'] underline-offset-4 hover:underline focus-visible:underline md:py-0 md:text-xl">
                 Projects
             </a>
