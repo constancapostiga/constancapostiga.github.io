@@ -6,7 +6,7 @@
   <!-- ─── Hero ─────────────────────────────────────────────────────────── -->
   <section class="relative px-5 pt-12 sm:px-8 md:px-14 md:pt-16 overflow-hidden">
 
-    <div class="relative mx-auto max-w-3xl text-center space-y-8">
+    <div class="relative mx-auto max-w-3xl text-center space-y-8 mt-[8%]">
 
       <!-- Star — upper left, rotates clockwise on scroll -->
       <span aria-hidden="true" class="star pointer-events-none absolute select-none z-0
@@ -52,20 +52,20 @@
   </section>
 
   <!-- ─── Tag Strip (auto-scrolling marquee, left → right) ───────────────── -->
-  <div class="marquee-wrapper w-full overflow-hidden mt-[136px]">
+  <div class="marquee-wrapper w-full overflow-hidden mt-[14%]">
     <div class="marquee-track flex flex-nowrap items-center gap-2.5 w-max">
       @for (tag of tags; track $index) {
-      <span class="shrink-0 inline-flex items-center justify-center
-               rounded-full border border-black
-               px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black">
+      <span class="shrink-0 w-32 inline-flex items-center justify-center
+             rounded-full border border-black
+             px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black">
         {{ tag }}
       </span>
       }
       <!-- duplicate set for seamless loop -->
       @for (tag of tags; track $index) {
-      <span aria-hidden="true" class="shrink-0 inline-flex items-center justify-center
-               rounded-full border border-black
-               px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black">
+      <span aria-hidden="true" class="shrink-0 w-32 inline-flex items-center justify-center
+             rounded-full border border-black
+             px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black">
         {{ tag }}
       </span>
       }
@@ -73,7 +73,7 @@
   </div>
 
   <!-- ─── Projects Heading ─────────────────────────────────────────────── -->
-  <div id="projects" class="px-5 sm:px-8 md:px-14 mt-[112px]">
+  <div id="projects" class="px-5 sm:px-8 md:px-14 mt-[14%]">
     <h2
       class="mx-auto max-w-screen-xl text-left text-4xl font-normal font-['Outfit'] uppercase tracking-wide text-black">
       Projects
