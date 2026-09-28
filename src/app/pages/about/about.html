@@ -5,7 +5,9 @@
 
         <!-- Star cluster — left side -->
         <span aria-hidden="true" class="pointer-events-none absolute select-none
-       left-[20%] top-[38%] size-12 sm:size-16 md:size-20 rotate-[15deg]">
+  left-[8%] top-[30%] size-8 rotate-[15deg]
+  sm:left-[12%] sm:top-[20%] sm:size-16
+  md:size-20">
             <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                 <path
                     d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
@@ -14,7 +16,9 @@
         </span>
 
         <span aria-hidden="true" class="pointer-events-none absolute select-none
-       left-[20%] top-[12%] size-7 sm:size-9 md:size-11 rotate-[-10deg]">
+  left-[18%] top-[28%] size-5 rotate-[-10deg]
+  sm:left-[19%] sm:bottom-auto sm:top-[12%] sm:size-9
+  md:size-11">
             <svg viewBox="14 12 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                 <path
                     d="M53.7642 12.4048L51.6934 35.1971L72.7301 44.2097L50.4135 49.2834L48.3427 72.0756L36.6211 52.4191L14.3045 57.4929L29.3768 40.2708L17.6552 20.6143L38.6919 29.6269L53.7642 12.4048Z"
@@ -24,7 +28,9 @@
 
         <!-- Star cluster — right side -->
         <span aria-hidden="true" class="pointer-events-none absolute select-none
-       right-[6%] top-[42%] size-12 sm:size-16 md:size-20 rotate-[-20deg]">
+  left-[81%] top-[42%] size-5 rotate-[8deg]
+  sm:right-[11%] sm:top-[32%] sm:bottom-auto sm:size-9
+  md:size-20">
             <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                 <path
                     d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
@@ -33,7 +39,9 @@
         </span>
 
         <span aria-hidden="true" class="pointer-events-none absolute select-none
-       right-[2%] top-[58%] size-7 sm:size-9 md:size-11 rotate-[8deg]">
+  right-[4%] bottom-[49%] size-8 rotate-[-20deg]
+  sm:right-[18%]  sm:bottom-auto sm:top-[60%] sm:size-16
+  md:size-11">
             <svg viewBox="841 243 59 61" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
                 <path
                     d="M899.064 255.152L885.39 273.504L898.619 292.179L876.94 284.846L863.266 303.199L863.541 280.314L841.861 272.981L863.711 266.171L863.986 243.286L877.214 261.962L899.064 255.152Z"
@@ -42,26 +50,32 @@
         </span>
 
         <!-- Title -->
-        <h1 class="relative z-10 mx-auto max-w-3xl text-center text-4xl sm:text-5xl md:text-6xl
-         font-normal font-['Adventures_Unlimited'] leading-tight tracking-[6.4px] text-black">
-            Hi, I'm Constança Postiga!
+        <h1 class="relative z-10 mx-auto max-w-3xl text-center
+  text-3xl leading-8 tracking-[3.2px]
+  sm:text-5xl sm:leading-tight sm:tracking-[6.4px]
+  md:text-6xl
+  font-normal font-['Adventures_Unlimited'] text-black">
+            Hi, I'm <br class="sm:hidden">
+            Constança Postiga!
         </h1>
 
 
     </section>
     <!-- ─── About Content ──────────────────────────────────────────────────── -->
     <section class="px-5 sm:px-8 md:px-14 py-12 mt-8">
-        <div class="mx-auto max-w-screen-xl flex flex-col md:flex-row gap-10 md:gap-16">
+        <div class="mx-auto max-w-screen-xl flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
 
-            <!-- Left column: Image + Software + CV -->
-            <div class="shrink-0 w-full md:w-[380px] flex flex-col gap-10">
+            <!-- Left column: Image + Software + CV
+                 Mobile: wrapper is `contents`, so children are reordered individually
+                 (image → bio → software → CV). Desktop: normal left column. -->
+            <div class="contents md:flex md:flex-col md:gap-10 md:shrink-0 md:w-[380px]">
 
                 <!-- Image -->
-                <img class="w-full h-auto max-w-[380px] mx-auto md:mx-0 rounded-[10px]
+                <img class="order-1 md:order-none w-full h-auto max-w-[380px] mx-auto md:mx-0 rounded-[10px]
                   origin-top-left -rotate-[0.58deg] object-cover" src="/images/profile.png" alt="Constança Postiga" />
 
                 <!-- Software -->
-                <div class="flex flex-col gap-4">
+                <div class="order-3 md:order-none flex flex-col gap-4">
                     <p class="text-xl font-normal font-['Outfit'] text-black">
                         Softwares I usually work with:
                     </p>
@@ -167,7 +181,7 @@
                 </div>
 
                 <!-- CV -->
-                <div class="flex flex-col gap-4">
+                <div class="order-4 md:order-none flex flex-col gap-4">
                     <p class="text-xl font-normal font-['Outfit'] text-black">My CV :</p>
 
                     <div class="flex flex-row gap-4">
@@ -186,7 +200,7 @@
             </div>
 
             <!-- Right column: Bio -->
-            <div class="flex flex-col gap-10">
+            <div class="order-2 md:order-none flex flex-col gap-10">
                 <p class="text-lg sm:text-xl font-normal font-['Outfit'] text-black leading-relaxed">
                     I'm a 21-year-old Graphic Designer based in Porto, Portugal. I graduated UPCA with a degree in
                     Graphic Design in June 2026.
