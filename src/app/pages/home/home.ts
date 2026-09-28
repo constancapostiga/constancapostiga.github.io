@@ -2,6 +2,8 @@ import { Component, HostListener, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header';
 import { FooterComponent } from '../../components/footer/footer';
+import { ButtonComponent } from '../../components/button/button';
+import { TagStripComponent } from '../../components/tag-strip/tag-strip';
 
 interface Project {
   image: string;
@@ -12,12 +14,18 @@ interface Project {
 }
 
 @Component({
-  imports: [HeaderComponent, RouterLink, FooterComponent],
+  imports: [HeaderComponent, RouterLink, FooterComponent, ButtonComponent, TagStripComponent],
   selector: 'app-home',
   styleUrl: './home.scss',
   templateUrl: './home.html',
 })
 export class HomeComponent {
+  constructor() {
+    if (typeof window !== 'undefined' && 'scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+  }
+
   readonly scrollY = signal(0);
 
   @HostListener('window:scroll')
@@ -27,12 +35,12 @@ export class HomeComponent {
 
   /** Upper-left star rotates clockwise with scroll */
   get starTopRotation(): string {
-    return `rotate(${this.scrollY() * 0.2}deg)`;
+    return `rotate(${this.scrollY() * 0.5}deg)`;
   }
 
   /** Bottom-right star rotates counter-clockwise with scroll */
   get starBottomRotation(): string {
-    return `rotate(${-this.scrollY() * 0.2}deg)`;
+    return `rotate(${-this.scrollY() * 0.5}deg)`;
   }
 
   readonly tags: string[] = [

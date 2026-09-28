@@ -1,0 +1,24 @@
+<div class="marquee-wrapper w-full overflow-hidden">
+  <div
+    class="marquee-track flex flex-nowrap items-center w-max"
+    [class.marquee-right]="direction() === 'right'"
+    [style.animationDuration]="speed()"
+  >
+    @for (tag of repeatedTags(); track $index) {
+      <span
+        class="shrink-0 mr-2.5 w-32 inline-flex items-center justify-center rounded-full border border-black px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black"
+      >
+        {{ tag }}
+      </span>
+    }
+    <!-- duplicate set for seamless loop -->
+    @for (tag of repeatedTags(); track $index) {
+      <span
+        aria-hidden="true"
+        class="shrink-0 mr-2.5 w-32 inline-flex items-center justify-center rounded-full border border-black px-6 py-3 text-xs font-normal font-['Outfit'] whitespace-nowrap text-black"
+      >
+        {{ tag }}
+      </span>
+    }
+  </div>
+</div>

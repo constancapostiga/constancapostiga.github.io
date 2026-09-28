@@ -1,0 +1,13 @@
+@if (routerLink()) {
+  <a [routerLink]="routerLink()" [class]="baseClasses">
+    @if (text()) { {{ text() }} } @else { <ng-content /> }
+  </a>
+} @else if (href()) {
+  <a [href]="href()" [class]="baseClasses">
+    @if (text()) { {{ text() }} } @else { <ng-content /> }
+  </a>
+} @else {
+  <button [type]="type()" [class]="baseClasses">
+    @if (text()) { {{ text() }} } @else { <ng-content /> }
+  </button>
+}

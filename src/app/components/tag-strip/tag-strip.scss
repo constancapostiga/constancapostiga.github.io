@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+
+.marquee-wrapper {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.marquee-track {
+  will-change: transform;
+  backface-visibility: hidden;
+  animation: marquee-scroll-left 25s linear infinite;
+  animation-delay: 0s;
+
+  &.marquee-right {
+    animation-name: marquee-scroll-right;
+  }
+}
+
+/* Pausa só em dispositivos com rato (não fica "presa" no touch) */
+@media (hover: hover) and (pointer: fine) {
+  .marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee-scroll-left {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes marquee-scroll-right {
+  from { transform: translate3d(-50%, 0, 0); }
+  to   { transform: translate3d(0, 0, 0); }
+}
