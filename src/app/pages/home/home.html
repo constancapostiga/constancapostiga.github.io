@@ -9,9 +9,8 @@
     <div class="relative mx-auto max-w-3xl text-center space-y-8 mt-12 sm:mt-16 md:mt-20">
 
       <!-- Star — upper left, rotates clockwise on scroll -->
-      <!-- Star — upper left, rotates clockwise on scroll -->
       <span aria-hidden="true" class="star pointer-events-none absolute select-none z-0
-     left-[-2%] top-[-10%]
+     left-[2%] top-[-10%]
      sm:left-[-6%] sm:top-[-4%]
      md:left-[-13%] md:top-[-6%]
      size-8 sm:size-16 md:size-20" [style.transform]="starTopRotation">
@@ -25,7 +24,7 @@
 
       <!-- Star — lower right, rotates counter-clockwise on scroll -->
       <span aria-hidden="true" class="star pointer-events-none absolute select-none z-0
-     left-[90%] top-[calc(100%-6rem)]
+     left-[90%] top-[calc(100%-4rem)]
      sm:left-[92%] sm:top-[52%]
      md:left-[101%]
      size-8 sm:size-16 md:size-20" [style.transform]="starBottomRotation">
@@ -37,9 +36,9 @@
         </svg>
       </span>
       <h1 class="relative z-10 text-4xl sm:text-5xl md:text-6xl font-normal font-['Adventures_Unlimited']
-               leading-tight tracking-widest text-black">
-        Hi, I'm Constança Postiga! <br>
-        I'm a graphic designer and this is my portfolio
+           leading-tight tracking-widest text-black">
+        <span class="block">Hi, I'm Constança Postiga!</span>
+        <span class="block">I'm a graphic designer and this is my portfolio</span>
       </h1>
 
       <app-button routerLink="/about" text="More About Me" class="relative z-10" />
