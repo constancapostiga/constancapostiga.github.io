@@ -1,202 +1,186 @@
-<app-header></app-header>
-<main>
+    <app-header></app-header>
+    <main>
 
-    <!-- ─── Project Title ──────────────────────────────────────────────── -->
-    <section class="px-5 pt-12 sm:px-8 md:px-14 text-center mt-40">
-        <h1 class="font-['Outfit'] text-black">
-            <span class="text-3xl sm:text-4xl font-normal">ARPEGGIO MUSIC STORE</span>
-            <span class="text-lg sm:text-xl font-normal ml-2 text-neutral-500">(2025)</span>
-        </h1>
-    </section>
+        <!-- ─── Project Title ──────────────────────────────────────────────── -->
+        <section class="px-5 pt-12 sm:px-8 md:px-14 text-center mt-40">
+            <h1 class="font-['Outfit'] text-black">
+                <span class="text-3xl sm:text-4xl font-normal">ARPEGGIO MUSIC STORE</span>
+                <span class="text-lg sm:text-xl font-normal ml-2 text-neutral-500">(2025)</span>
+            </h1>
+        </section>
 
-    <app-tag-strip class="mt-40" [tags]="tags"></app-tag-strip>
+        <app-tag-strip class="mt-40" [tags]="tags"></app-tag-strip>
 
-    <section class="px-5 sm:px-8 md:px-14 mt-30 pb-20 md:pb-32">
+    <section class="px-5 sm:px-8 md:px-14 mt-45">
 
         <!-- ============================================================= -->
-        <!-- DESKTOP                                                       -->
-        <!-- Proportional grid (366 / 24 / 412 / 16 / 305): same look as   -->
-        <!-- the Figma at full size, scales down on smaller screens.       -->
+        <!-- DESKTOP MOSAIC                                                -->
+        <!-- 3-column masonry (354 / 16 / 440 / 14 / 249 proportional).    -->
+        <!-- Assumption: figs assigned column-by-column, top to bottom —   -->
+        <!-- swap the src values below if a different image should sit    -->
+        <!-- in a different slot.                                          -->
         <!-- ============================================================= -->
         <div class="hidden md:grid mx-auto max-w-[1123px]
-               grid-cols-[minmax(0,366fr)_minmax(0,24fr)_minmax(0,412fr)_minmax(0,16fr)_minmax(0,305fr)]">
+               grid-cols-[minmax(0,354fr)_minmax(0,16fr)_minmax(0,440fr)_minmax(0,14fr)_minmax(0,249fr)]">
 
             <!-- ========================================================= -->
-            <!-- LEFT COLUMN                                               -->
+            <!-- COLUMN 1                                                  -->
             <!-- ========================================================= -->
 
             <div class="col-start-1 flex flex-col gap-4">
 
                 <!-- FIG 1 -->
                 <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding"
-                    class="w-full h-auto rounded-[10px]" />
+                    class="w-full h-auto " />
 
                 <!-- FIG 2 -->
-                <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full h-auto rounded-[10px]" />
+                <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full h-auto " />
 
                 <!-- FIG 3 -->
-                <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full h-auto rounded-[10px]" />
+                <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full h-auto " />
 
                 <!-- FIG 4 -->
-                <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                <!-- FIG 5 -->
-                <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                <!-- FIG 8 -->
-                <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="w-full h-auto rounded-[10px]" />
+                <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full h-auto " />
 
             </div>
 
 
             <!-- ========================================================= -->
-            <!-- RIGHT SIDE                                                -->
+            <!-- COLUMN 2                                                  -->
             <!-- ========================================================= -->
 
-            <div class="col-start-3 col-span-3">
+            <div class="col-start-3 flex flex-col gap-4">
 
-                <!-- ===================================================== -->
-                <!-- TEXT                                                   -->
-                <!-- ===================================================== -->
+                <!-- FIG 5 -->
+                <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full h-auto " />
 
-                <div class="min-h-[700px] text-black text-xl font-normal font-['Outfit'] leading-tight">
+                <!-- FIG 6 -->
+                <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full h-auto " />
 
-                    <p>
-                        For this project, I developed the visual identity for Arpeggio, a fictional music store located in Porto. I wanted to use this project as an opportunity to explore a more playful, expressive and unconventional visual language, moving away from some of the more restrained work I had created previously.
-                    </p>
-                    <p>
-                        Arpeggio is imagined as a space for teenagers and young adults who share a passion for music, instruments and records — a place where discovering music feels as exciting as experiencing it. More than simply a store, the concept behind Arpeggio is a place where you can live the music: a space that encourages people to explore, discover new sounds and connect with music in a more personal and creative way.
-                    </p>
-                    <p>
-                        The name Arpeggio comes from the musical technique. This concept became an important part of the visual identity, particularly in the logo, whose movement is inspired by the rhythm and progression of an arpeggio. I wanted the identity to communicate a sense of movement, rhythm and energy, while still being simple enough to remain recognisable and versatile across different applications.
-                    </p>
-                    <p>
-                        To bring the identity to life, I created a range of playful stationery and merchandise, including tote bags and other branded materials. These applications were designed to make the store feel contemporary, approachable and culturally relevant to its target audience. The goal was for the branding to work not only inside the store, but also as something people would want to interact with and take with them. They were designed to function almost as a piece of advertising — something eye-catching and desirable that could spark curiosity about the brand simply by being seen on the street. Through these different touchpoints, I wanted Arpeggio to feel like a brand that people would remember, want to visit for the first time, and ultimately want to return to.
-                    </p>
-                    <p>
-                        Overall, the project allowed me to experiment with a more playful and youthful approach to branding, while exploring how a visual identity can translate the feeling and energy of music into a physical space and a wider brand experience.
-                    </p>
+                <!-- FIG 7 -->
+                <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full h-auto " />
 
+                <!-- FIG 8 + FIG 9 side by side, ~191:167 ratio -->
+                <div class="flex gap-4">
+                    <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="flex-[191] w-0 h-auto " />
+                    <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="flex-[167] w-0 h-auto " />
                 </div>
 
-
-                <!-- ===================================================== -->
-                <!-- LOWER RIGHT IMAGES                                    -->
-                <!-- ===================================================== -->
-
-                <div class="grid grid-cols-[minmax(0,412fr)_minmax(0,16fr)_minmax(0,305fr)] mt-6">
-
-                    <!-- ================================================ -->
-                    <!-- MIDDLE COLUMN                                     -->
-                    <!-- ================================================ -->
-
-                    <div class="col-start-1 flex flex-col gap-4">
-
-                        <!-- FIG 6 -->
-                        <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                        <!-- FIG 7 -->
-                        <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                        <!-- FIG 9 -->
-                        <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full h-auto rounded-[10px]" />
+            </div>
 
 
-                        <!-- ============================================ -->
-                        <!-- TOOLS                                         -->
-                        <!-- ============================================ -->
+            <!-- ========================================================= -->
+            <!-- COLUMN 3                                                  -->
+            <!-- ========================================================= -->
 
-                        <div class="flex flex-col items-center mt-16">
+            <div class="col-start-5 flex flex-col gap-4">
 
-                            <p class="w-64 text-center
-                                   text-black text-3xl
-                                   font-normal font-['Outfit']">
-                                Tools used for this project:
-                            </p>
+                <!-- FIG 10 -->
+                <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full h-auto " />
 
-                            <div class="flex gap-[22px] mt-12">
+                <!-- FIG 11 -->
+                <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full h-auto " />
 
-                                <!-- Figma -->
-                                <div class="size-16 relative overflow-hidden rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-full h-full">
-                                        <title>figma</title>
-                                        <g fill="none">
-                                            <rect width="256" height="256" fill="#242938" rx="60" />
-                                            <g clip-path="url(#SVGXwgIudex)">
-                                                <path fill="#0acf83"
-                                                    d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228" />
-                                                <path fill="#a259ff"
-                                                    d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333" />
-                                                <path fill="#f24e1e"
-                                                    d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334" />
-                                                <path fill="#ff7262"
-                                                    d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z" />
-                                                <path fill="#1abcfe"
-                                                    d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="SVGXwgIudex">
-                                                    <path fill="#fff" d="M61 28h133.36v200H61z" />
-                                                </clipPath>
-                                            </defs>
-                                        </g>
-                                    </svg>
-                                </div>
+                <!-- FIG 12 -->
+                <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full h-auto " />
 
-                                <!-- Photoshop -->
-                                <div class="size-16 relative overflow-hidden rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-full h-full">
-                                        <title>photoshop</title>
-                                        <path fill="#001e36"
-                                            d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6" />
-                                        <path fill="#31a8ff"
-                                            d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z" />
-                                    </svg>
-                                </div>
+                <!-- ============================================ -->
+                <!-- TOOLS                                         -->
+                <!-- ============================================ -->
 
-                                <!-- Illustrator -->
-                                <div class="size-16 relative overflow-hidden rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250" class="w-full h-full">
-                                        <title>adobe-illustrator</title>
-                                        <rect width="256" height="249.6" fill="#300" rx="42.5" />
-                                        <path fill="#ff9a00"
-                                            d="M124.054 149.79h-39.67l-8.072 25.073a2.02 2.02 0 0 1-2.061 1.546H54.158q-1.718 0-1.202-1.89l34.347-98.918q.515-1.545 1.03-3.52c.45-2.292.68-4.62.687-6.955a1.063 1.063 0 0 1 1.202-1.203h27.306q1.2 0 1.374.86l38.983 109.908q.515 1.72-1.03 1.718h-22.326a1.59 1.59 0 0 1-1.717-1.202zm-33.488-21.638H117.7l-.387-1.277l-.621-2.022l-.443-1.42l-.707-2.236l-1.503-4.707l-1.322-4.173l-3.433-10.87a334 334 0 0 1-2.46-8.138l-.628-2.21l-.734-2.613l-1.12-4.05l-.21-.763h-.171a139 139 0 0 1-3.136 12.23l-2.548 8.196l-1.402 4.528l-1.415 4.584q-.383 1.242-.765 2.456l-.76 2.398l-.756 2.342l-.752 2.284l-.748 2.227q-.372 1.1-.743 2.17zm90.501-46.025a12.46 12.46 0 0 1-9.445-3.778a13.6 13.6 0 0 1-3.607-9.789a12.6 12.6 0 0 1 3.864-9.53a13.27 13.27 0 0 1 9.165-3.697l.366.004q6.183 0 9.704 3.692a13.26 13.26 0 0 1 3.52 9.531a13.4 13.4 0 0 1-3.692 9.79a13.18 13.18 0 0 1-9.508 3.79zm-11.85 92.564V92.603q-.001-1.546 1.374-1.546h21.124q1.373 0 1.374 1.546v82.088q0 1.72-1.374 1.718h-20.952q-1.464 0-1.541-1.542z" />
-                                    </svg>
-                                </div>
+                <div class="flex flex-col items-center mt-8">
 
-                            </div>
+                    <p class="w-64 text-center
+                           text-black text-3xl
+                           font-normal font-['Outfit']">
+                        Tools used for this project:
+                    </p>
 
-                            <p class="mt-5
-                                   text-base font-normal
-                                   font-['Outfit'] text-black">
-                                and AI for mockups
-                            </p>
+                    <div class="flex gap-[22px] mt-12">
 
+                        <!-- Figma -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-full h-full">
+                                <title>figma</title>
+                                <g fill="none">
+                                    <rect width="256" height="256" fill="#242938" rx="60" />
+                                    <g clip-path="url(#SVGXwgIudex)">
+                                        <path fill="#0acf83"
+                                            d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228" />
+                                        <path fill="#a259ff"
+                                            d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333" />
+                                        <path fill="#f24e1e"
+                                            d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334" />
+                                        <path fill="#ff7262"
+                                            d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z" />
+                                        <path fill="#1abcfe"
+                                            d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="SVGXwgIudex">
+                                            <path fill="#fff" d="M61 28h133.36v200H61z" />
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <!-- Photoshop -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-full h-full">
+                                <title>photoshop</title>
+                                <path fill="#001e36"
+                                    d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6" />
+                                <path fill="#31a8ff"
+                                    d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z" />
+                            </svg>
+                        </div>
+
+                        <!-- Illustrator -->
+                        <div class="size-16 relative overflow-hidden rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250" class="w-full h-full">
+                                <title>adobe-illustrator</title>
+                                <rect width="256" height="249.6" fill="#300" rx="42.5" />
+                                <path fill="#ff9a00"
+                                    d="M124.054 149.79h-39.67l-8.072 25.073a2.02 2.02 0 0 1-2.061 1.546H54.158q-1.718 0-1.202-1.89l34.347-98.918q.515-1.545 1.03-3.52c.45-2.292.68-4.62.687-6.955a1.063 1.063 0 0 1 1.202-1.203h27.306q1.2 0 1.374.86l38.983 109.908q.515 1.72-1.03 1.718h-22.326a1.59 1.59 0 0 1-1.717-1.202zm-33.488-21.638H117.7l-.387-1.277l-.621-2.022l-.443-1.42l-.707-2.236l-1.503-4.707l-1.322-4.173l-3.433-10.87a334 334 0 0 1-2.46-8.138l-.628-2.21l-.734-2.613l-1.12-4.05l-.21-.763h-.171a139 139 0 0 1-3.136 12.23l-2.548 8.196l-1.402 4.528l-1.415 4.584q-.383 1.242-.765 2.456l-.76 2.398l-.756 2.342l-.752 2.284l-.748 2.227q-.372 1.1-.743 2.17zm90.501-46.025a12.46 12.46 0 0 1-9.445-3.778a13.6 13.6 0 0 1-3.607-9.789a12.6 12.6 0 0 1 3.864-9.53a13.27 13.27 0 0 1 9.165-3.697l.366.004q6.183 0 9.704 3.692a13.26 13.26 0 0 1 3.52 9.531a13.4 13.4 0 0 1-3.692 9.79a13.18 13.18 0 0 1-9.508 3.79zm-11.85 92.564V92.603q-.001-1.546 1.374-1.546h21.124q1.373 0 1.374 1.546v82.088q0 1.72-1.374 1.718h-20.952q-1.464 0-1.541-1.542z" />
+                            </svg>
                         </div>
 
                     </div>
 
-
-                    <!-- ================================================ -->
-                    <!-- RIGHT COLUMN                                      -->
-                    <!-- ================================================ -->
-
-                    <div class="col-start-3 flex flex-col gap-4">
-
-                        <!-- FIG 10 -->
-                        <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                        <!-- FIG 11 -->
-                        <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                        <!-- FIG 12 -->
-                        <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full h-auto rounded-[10px]" />
-
-                    </div>
+                    <p class="mt-5
+                           text-base font-normal
+                           font-['Outfit'] text-black">
+                        and AI for mockups
+                    </p>
 
                 </div>
 
             </div>
+
+        </div>
+
+        <!-- ===================================================== -->
+        <!-- TEXT (full width, below the mosaic)                    -->
+        <!-- ===================================================== -->
+
+        <div class="hidden md:block max-w-[1123px] mx-auto text-black text-xl font-normal font-['Outfit'] leading-tight mt-40 pb-40">
+
+            <p>
+                For this project, I developed the visual identity for Arpeggio, a fictional music store located in Porto. I wanted to use this project as an opportunity to explore a more playful, expressive and unconventional visual language, moving away from some of the more restrained work I had created previously.
+            </p>
+            <p>
+                Arpeggio is imagined as a space for teenagers and young adults who share a passion for music, instruments and records — a place where discovering music feels as exciting as experiencing it. More than simply a store, the concept behind Arpeggio is a place where you can live the music: a space that encourages people to explore, discover new sounds and connect with music in a more personal and creative way.
+            </p>
+            <p>
+                The name Arpeggio comes from the musical technique. This concept became an important part of the visual identity, particularly in the logo, whose movement is inspired by the rhythm and progression of an arpeggio. I wanted the identity to communicate a sense of movement, rhythm and energy, while still being simple enough to remain recognisable and versatile across different applications.
+            </p>
+            <p>
+                To bring the identity to life, I created a range of playful stationery and merchandise, including tote bags and other branded materials. These applications were designed to make the store feel contemporary, approachable and culturally relevant to its target audience. The goal was for the branding to work not only inside the store, but also as something people would want to interact with and take with them. They were designed to function almost as a piece of advertising — something eye-catching and desirable that could spark curiosity about the brand simply by being seen on the street. Through these different touchpoints, I wanted Arpeggio to feel like a brand that people would remember, want to visit for the first time, and ultimately want to return to.
+            </p>
+            <p>
+                Overall, the project allowed me to experiment with a more playful and youthful approach to branding, while exploring how a visual identity can translate the feeling and energy of music into a physical space and a wider brand experience.
+            </p>
 
         </div>
 
@@ -208,11 +192,94 @@
         <div class="md:hidden flex flex-col gap-4">
 
             <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding"
-                class="w-full rounded-[10px]" />
+                class="w-full " />
 
-            <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full rounded-[10px]" />
+            <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full " />
 
-            <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full rounded-[10px]" />
+            <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full " />
+
+            <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full " />
+
+            <!-- Tools (was missing on mobile before) -->
+            <div class="flex flex-col items-center mt-8">
+
+                <p class="w-64 text-center text-black text-3xl font-normal font-['Outfit']">
+                    Tools used for this project:
+                </p>
+
+                <div class="flex gap-[22px] mt-12">
+
+                    <!-- Figma -->
+                    <div class="size-16 relative overflow-hidden rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-full h-full">
+                            <title>figma</title>
+                            <g fill="none">
+                                <rect width="256" height="256" fill="#242938" rx="60" />
+                                <g clip-path="url(#SVGmobXwgIudex)">
+                                    <path fill="#0acf83"
+                                        d="M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228" />
+                                    <path fill="#a259ff"
+                                        d="M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333" />
+                                    <path fill="#f24e1e"
+                                        d="M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334" />
+                                    <path fill="#ff7262"
+                                        d="M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z" />
+                                    <path fill="#1abcfe"
+                                        d="M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128" />
+                                </g>
+                                <defs>
+                                    <clipPath id="SVGmobXwgIudex">
+                                        <path fill="#fff" d="M61 28h133.36v200H61z" />
+                                    </clipPath>
+                                </defs>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Photoshop -->
+                    <div class="size-16 relative overflow-hidden rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="w-full h-full">
+                            <title>photoshop</title>
+                            <path fill="#001e36"
+                                d="M22.667 1.6h82.666C117.867 1.6 128 11.733 128 24.267v79.466c0 12.534-10.133 22.667-22.667 22.667H22.667C10.133 126.4 0 116.267 0 103.733V24.267C0 11.733 10.133 1.6 22.667 1.6" />
+                            <path fill="#31a8ff"
+                                d="M45.867 33.333c-1.6 0-3.2 0-4.853.054c-1.654.053-3.201.053-4.641.107c-1.44.053-2.773.053-4.053.106c-1.227.053-2.08.053-2.987.053c-.373 0-.533.213-.533.587v54.88c0 .48.213.694.64.694h10.347c.373-.054.64-.374.586-.747v-17.12c1.013 0 1.76 0 2.294.053c.533.053 1.386.053 2.666.053c4.374 0 8.374-.48 12-1.813c3.467-1.28 6.454-3.52 8.587-6.507q3.2-4.48 3.2-11.36c0-2.4-.426-4.693-1.226-6.933A17 17 0 0 0 64 39.36a19.05 19.05 0 0 0-7.147-4.374c-2.987-1.12-6.613-1.653-10.986-1.653m1.19 10.505c1.9.036 3.75.368 5.476 1.068c1.547.587 2.827 1.654 3.734 3.04a8.8 8.8 0 0 1 1.227 4.748c0 2.346-.534 4.16-1.654 5.493c-1.174 1.333-2.667 2.347-4.373 2.827c-1.974.64-4.054.959-6.134.959h-2.827c-.64 0-1.332-.053-2.079-.106v-17.92c.373-.054 1.12-.107 2.187-.053c1.013-.054 2.239-.054 3.626-.054q.41-.01.817-.002m44.73 2.723c-3.787 0-6.934.586-9.44 1.866c-2.293 1.067-4.267 2.773-5.6 4.906c-1.173 1.974-1.814 4.16-1.814 6.454a11.45 11.45 0 0 0 1.227 5.44a13.8 13.8 0 0 0 4.054 4.533a32.6 32.6 0 0 0 7.573 3.84c2.613 1.013 4.373 1.813 5.227 2.506c.853.694 1.28 1.387 1.28 2.134c0 .96-.587 1.867-1.44 2.24c-.96.48-2.4.747-4.427.747c-2.133 0-4.267-.267-6.294-.8a22.8 22.8 0 0 1-6.613-2.613c-.16-.107-.32-.16-.48-.053c-.16.106-.213.319-.213.479v9.28c-.053.427.213.8.587 1.013a21.5 21.5 0 0 0 5.44 1.707c2.4.48 4.799.693 7.252.693c3.84 0 7.041-.586 9.654-1.706c2.4-.96 4.48-2.613 5.973-4.747a12.4 12.4 0 0 0 2.08-7.093a11.5 11.5 0 0 0-1.226-5.493c-1.014-1.814-2.454-3.307-4.214-4.427a38.6 38.6 0 0 0-8.213-3.894a49 49 0 0 1-3.787-1.76c-.693-.373-1.333-.853-1.813-1.44c-.32-.427-.533-.906-.533-1.386s.16-1.013.426-1.44c.374-.533.96-.907 1.653-1.067c1.014-.266 2.134-.427 3.2-.374c2.027 0 4 .267 5.974.694c1.814.373 3.52.96 5.12 1.814c.213.106.48.106.96 0a.66.66 0 0 0 .267-.534v-8.693c0-.214-.054-.427-.107-.64c-.107-.213-.32-.427-.533-.48A18.8 18.8 0 0 0 98.4 47.04a46 46 0 0 0-6.613-.48z" />
+                        </svg>
+                    </div>
+
+                    <!-- Illustrator -->
+                    <div class="size-16 relative overflow-hidden rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 250" class="w-full h-full">
+                            <title>adobe-illustrator</title>
+                            <rect width="256" height="249.6" fill="#300" rx="42.5" />
+                            <path fill="#ff9a00"
+                                d="M124.054 149.79h-39.67l-8.072 25.073a2.02 2.02 0 0 1-2.061 1.546H54.158q-1.718 0-1.202-1.89l34.347-98.918q.515-1.545 1.03-3.52c.45-2.292.68-4.62.687-6.955a1.063 1.063 0 0 1 1.202-1.203h27.306q1.2 0 1.374.86l38.983 109.908q.515 1.72-1.03 1.718h-22.326a1.59 1.59 0 0 1-1.717-1.202zm-33.488-21.638H117.7l-.387-1.277l-.621-2.022l-.443-1.42l-.707-2.236l-1.503-4.707l-1.322-4.173l-3.433-10.87a334 334 0 0 1-2.46-8.138l-.628-2.21l-.734-2.613l-1.12-4.05l-.21-.763h-.171a139 139 0 0 1-3.136 12.23l-2.548 8.196l-1.402 4.528l-1.415 4.584q-.383 1.242-.765 2.456l-.76 2.398l-.756 2.342l-.752 2.284l-.748 2.227q-.372 1.1-.743 2.17zm90.501-46.025a12.46 12.46 0 0 1-9.445-3.778a13.6 13.6 0 0 1-3.607-9.789a12.6 12.6 0 0 1 3.864-9.53a13.27 13.27 0 0 1 9.165-3.697l.366.004q6.183 0 9.704 3.692a13.26 13.26 0 0 1 3.52 9.531a13.4 13.4 0 0 1-3.692 9.79a13.18 13.18 0 0 1-9.508 3.79zm-11.85 92.564V92.603q-.001-1.546 1.374-1.546h21.124q1.373 0 1.374 1.546v82.088q0 1.72-1.374 1.718h-20.952q-1.464 0-1.541-1.542z" />
+                        </svg>
+                    </div>
+
+                </div>
+
+                <p class="mt-5 text-base font-normal font-['Outfit'] text-black">
+                    and AI for mockups
+                </p>
+
+            </div>
 
             <div class="flex flex-col gap-4 text-black text-lg
                    font-normal font-['Outfit']
@@ -235,18 +302,6 @@
                 </p>
 
             </div>
-
-            <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full rounded-[10px]" />
-
-            <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full rounded-[10px]" />
-
-            <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full rounded-[10px]" />
-
-            <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full rounded-[10px]" />
-
-            <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full rounded-[10px]" />
-
-            <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full rounded-[10px]" />
 
         </div>
 

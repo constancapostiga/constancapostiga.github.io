@@ -63,14 +63,14 @@ export class HomeComponent {
       title: 'BAR - PRAIA DO TURISMO',
       description:
         'Praia do Turismo is a university project focused on developing an alternative visual identity for a real seasonal beach bar located in Vila do Conde. As my first experience working with a real client, the project involved researching the brand and its audience, developing a new logo and visual identity, and applying it across a variety of physical and digital touchpoints. The goal was building a more cohesive and contemporary identity while maintaining the character of the space.',
-      redirect_to: '/praia-do-turismo',
+      redirect_to: '/turismo',
       year: 2026,
     },
     {
       image: '/images/gel.png',
       title: 'ROMANCE ICE CREAM',
       description:
-        'Romance is a university packaging and campaign project exploring a fictional special edition of Continente’s ice cream cups. Created around the theme of love and Valentine’s Day, the project involved developing a new visual identity for a three-flavour collection, including Strawberry and Chocolate, Blueberry Cheesecake and Red Velvet Cake. I created a geometric pattern and individual colour palettes to connect the three packages while giving each flavour its own identity.',
+        'Romance    is a university packaging and campaign project exploring a fictional special edition of Continente’s ice cream cups. Created around the theme of love and Valentine’s Day, the project involved developing a new visual identity for a three-flavour collection, including Strawberry and Chocolate, Blueberry Cheesecake and Red Velvet Cake. I created a geometric pattern and individual colour palettes to connect the three packages while giving each flavour its own identity.',
       redirect_to: '/romance-ice-cream',
       year: 2025,
     },
