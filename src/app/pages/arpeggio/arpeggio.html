@@ -1,98 +1,82 @@
-    <app-header></app-header>
-    <main>
+<app-header></app-header>
+<main>
 
-        <!-- ─── Project Title ──────────────────────────────────────────────── -->
-        <section class="px-5 pt-12 sm:px-8 md:px-14 text-center mt-40">
-            <h1 class="font-['Outfit'] text-black">
-                <span class="text-3xl sm:text-4xl font-normal">ARPEGGIO MUSIC STORE</span>
-                <span class="text-lg sm:text-xl font-normal ml-2 text-neutral-500">(2025)</span>
-            </h1>
-        </section>
+    <!-- ─── Project Title ──────────────────────────────────────────────── -->
+    <section class="px-5 pt-12 sm:px-8 md:px-14 text-center mt-40">
+        <h1 class="font-['Outfit'] text-black">
+            <span class="text-3xl sm:text-4xl font-normal">ARPEGGIO MUSIC STORE</span>
+            <span class="text-lg sm:text-xl font-normal ml-2 text-neutral-500">(2025)</span>
+        </h1>
+    </section>
 
-        <app-tag-strip class="mt-40" [tags]="tags"></app-tag-strip>
+    <app-tag-strip class="mt-40" [tags]="tags"></app-tag-strip>
 
     <section class="px-5 sm:px-8 md:px-14 mt-45">
 
         <!-- ============================================================= -->
         <!-- DESKTOP MOSAIC                                                -->
         <!-- 3-column masonry (354 / 16 / 440 / 14 / 249 proportional).    -->
-        <!-- Assumption: figs assigned column-by-column, top to bottom —   -->
-        <!-- swap the src values below if a different image should sit    -->
-        <!-- in a different slot.                                          -->
         <!-- ============================================================= -->
         <div class="hidden md:grid mx-auto max-w-[1123px]
-               grid-cols-[minmax(0,354fr)_minmax(0,16fr)_minmax(0,440fr)_minmax(0,14fr)_minmax(0,249fr)]">
+                    grid-cols-[minmax(0,354fr)_minmax(0,16fr)_minmax(0,440fr)_minmax(0,14fr)_minmax(0,249fr)]">
 
-            <!-- ========================================================= -->
-            <!-- COLUMN 1                                                  -->
-            <!-- ========================================================= -->
-
+            <!-- COLUMN 1 -->
             <div class="col-start-1 flex flex-col gap-4">
 
                 <!-- FIG 1 -->
-                <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding"
-                    class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding" class="w-full h-auto" />
 
                 <!-- FIG 2 -->
-                <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 3 -->
-                <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 4 -->
-                <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig3.png" alt="" class="w-full h-auto" />
 
             </div>
 
-
-            <!-- ========================================================= -->
-            <!-- COLUMN 2                                                  -->
-            <!-- ========================================================= -->
-
+            <!-- COLUMN 2 -->
             <div class="col-start-3 flex flex-col gap-4">
 
                 <!-- FIG 5 -->
-                <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 6 -->
-                <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 7 -->
-                <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full h-auto" />
 
-                <!-- FIG 8 + FIG 9 side by side, ~191:167 ratio -->
-                <div class="flex gap-4">
-                    <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="flex-[191] w-0 h-auto " />
-                    <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="flex-[167] w-0 h-auto " />
+                <!-- side by side -->
+                <div class="flex gap-4 w-full">
+
+                    <!-- FIG 8 -->
+                    <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="flex-1 min-w-0 h-auto" />
+
+                    <!-- FIG 9 -->
+                    <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="flex-1 min-w-0 h-auto" />
+
                 </div>
-
             </div>
 
-
-            <!-- ========================================================= -->
-            <!-- COLUMN 3                                                  -->
-            <!-- ========================================================= -->
-
+            <!-- COLUMN 3 -->
             <div class="col-start-5 flex flex-col gap-4">
 
                 <!-- FIG 10 -->
-                <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 11 -->
-                <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full h-auto" />
 
                 <!-- FIG 12 -->
-                <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full h-auto " />
+                <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full h-auto" />
 
-                <!-- ============================================ -->
-                <!-- TOOLS                                         -->
-                <!-- ============================================ -->
-
+                <!-- TOOLS -->
                 <div class="flex flex-col items-center mt-8">
 
-                    <p class="w-64 text-center
-                           text-black text-3xl
-                           font-normal font-['Outfit']">
+                    <p class="w-64 text-center text-black text-3xl font-normal font-['Outfit']">
                         Tools used for this project:
                     </p>
 
@@ -148,9 +132,7 @@
 
                     </div>
 
-                    <p class="mt-5
-                           text-base font-normal
-                           font-['Outfit'] text-black">
+                    <p class="mt-5 text-base font-normal font-['Outfit'] text-black">
                         and AI for mockups
                     </p>
 
@@ -160,12 +142,10 @@
 
         </div>
 
-        <!-- ===================================================== -->
-        <!-- TEXT (full width, below the mosaic)                    -->
-        <!-- ===================================================== -->
-
-        <div class="hidden md:block max-w-[1123px] mx-auto text-black text-xl font-normal font-['Outfit'] leading-tight mt-40 pb-40">
-
+        <!-- ============================================================= -->
+        <!-- TEXT (desktop, full width below the mosaic)                   -->
+        <!-- ============================================================= -->
+        <div class="hidden md:block max-w-[1123px] mx-auto text-black text-xl font-normal font-['Outfit'] leading-tight space-y-6 mt-40 pb-40">
             <p>
                 For this project, I developed the visual identity for Arpeggio, a fictional music store located in Porto. I wanted to use this project as an opportunity to explore a more playful, expressive and unconventional visual language, moving away from some of the more restrained work I had created previously.
             </p>
@@ -181,42 +161,27 @@
             <p>
                 Overall, the project allowed me to experiment with a more playful and youthful approach to branding, while exploring how a visual identity can translate the feeling and energy of music into a physical space and a wider brand experience.
             </p>
-
         </div>
-
 
         <!-- ============================================================= -->
         <!-- MOBILE                                                        -->
         <!-- ============================================================= -->
-
         <div class="md:hidden flex flex-col gap-4">
 
-            <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding"
-                class="w-full " />
+            <img src="/images/arpeggio/arpeggio_fig1.png" alt="Arpeggio Music Store branding" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig3.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full" />
+            <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full" />
 
-            <img src="/images/arpeggio/arpeggio_fig2.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio12.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig4.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig5.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig6.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig7.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig8.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig9.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig10.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig11.png" alt="" class="w-full " />
-
-            <img src="/images/arpeggio/arpeggio_fig12.png" alt="" class="w-full " />
-
-            <!-- Tools (was missing on mobile before) -->
+            <!-- Tools -->
             <div class="flex flex-col items-center mt-8">
 
                 <p class="w-64 text-center text-black text-3xl font-normal font-['Outfit']">
@@ -281,10 +246,8 @@
 
             </div>
 
-            <div class="flex flex-col gap-4 text-black text-lg
-                   font-normal font-['Outfit']
-                   leading-relaxed">
-
+            <!-- Text (mobile) -->
+            <div class="flex flex-col gap-4 text-black text-lg font-normal font-['Outfit'] leading-relaxed pb-40">
                 <p>
                     For this project, I developed the visual identity for Arpeggio, a fictional music store located in Porto. I wanted to use this project as an opportunity to explore a more playful, expressive and unconventional visual language, moving away from some of the more restrained work I had created previously.
                 </p>
@@ -300,7 +263,6 @@
                 <p>
                     Overall, the project allowed me to experiment with a more playful and youthful approach to branding, while exploring how a visual identity can translate the feeling and energy of music into a physical space and a wider brand experience.
                 </p>
-
             </div>
 
         </div>

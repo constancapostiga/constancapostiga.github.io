@@ -71,7 +71,7 @@ export class HomeComponent {
       title: 'ROMANCE ICE CREAM',
       description:
         'Romance    is a university packaging and campaign project exploring a fictional special edition of Continente’s ice cream cups. Created around the theme of love and Valentine’s Day, the project involved developing a new visual identity for a three-flavour collection, including Strawberry and Chocolate, Blueberry Cheesecake and Red Velvet Cake. I created a geometric pattern and individual colour palettes to connect the three packages while giving each flavour its own identity.',
-      redirect_to: '/romance-ice-cream',
+      redirect_to: '/romance',
       year: 2025,
     },
   ];

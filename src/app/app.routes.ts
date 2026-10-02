@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about';
 import { ArpeggioPage } from './pages/arpeggio/arpeggio';
 import { ContactComponent } from './pages/contact/contact';
 import { TurismoPage } from './pages/turismo/turismo';
+import { RomancePage } from './pages/romance/romance';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'arpeggio', component: ArpeggioPage },
   { path: 'turismo', component: TurismoPage },
+  { path: 'romance', component: RomancePage },
   { path: '**', redirectTo: '' }
 ];
