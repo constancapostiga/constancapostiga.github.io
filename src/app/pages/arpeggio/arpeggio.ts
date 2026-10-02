@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header';
 import { FooterComponent } from '../../components/footer/footer';
 import { TagStripComponent } from '../../components/tag-strip/tag-strip';
 
 
 @Component({
-  imports: [HeaderComponent, FooterComponent, RouterLink, TagStripComponent],
+  imports: [HeaderComponent, FooterComponent, TagStripComponent],
   selector: 'app-arpeggio',
   styleUrl: './arpeggio.scss',
   templateUrl: './arpeggio.html',

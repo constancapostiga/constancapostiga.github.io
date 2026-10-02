@@ -12,6 +12,6 @@ import { TagStripComponent } from '../../components/tag-strip/tag-strip';
 })
 export class TurismoPage {
   readonly tags: string[] = [
-    'Branding', 'Social Media', 'Stationery', 'Merch', 'Illustration', 'Packaging', 'Creative', 'Identity', 'Marketing', 'Digital', 'Campaign', 'UX/UI'
+    'Branding', 'Social Media', 'Stationery', 'Merch', 'Illustration', 'Packaging', 'Creative', 'Identity', 'Marketing', 'Digital', 'Campaign', 'UX/UI',
   ];
 }
